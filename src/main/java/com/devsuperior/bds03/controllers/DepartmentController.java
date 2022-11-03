@@ -17,10 +17,10 @@ public class DepartmentController {
 
 	@Autowired
 	private DepartmentService service;
-	
+
 	@GetMapping
 	public ResponseEntity<List<DepartmentDTO>> findAll() {
-		List<DepartmentDTO> list = service.findAll();		
+		List<DepartmentDTO> list = service.findAll();
 		return ResponseEntity.ok().body(list);
 	}
 }

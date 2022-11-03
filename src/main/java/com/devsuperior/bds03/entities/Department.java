@@ -18,10 +18,10 @@ public class Department {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	public Long id;
 	public String name;
-	
+
 	@OneToMany(mappedBy = "department")
 	public List<Employee> employees = new ArrayList<>();
-	
+
 	public Department() {
 	}
 
